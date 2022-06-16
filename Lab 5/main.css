@@ -1,0 +1,175 @@
+/*Mobile First Design code*/
+nav, section, aside {
+    display:block;
+}
+
+/*body coding the font-family, background color and color*/
+body {
+    font-family: "Trebuchet MS", arial, sans-serif;
+    background-color: #F2F2F2;
+    color: #696969;
+}
+
+/*width to 100% since this media will go up to 600px */
+#wrap {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/*formatting the h1 to look alike the image with font-family, text-transform and font-weight*/
+h1{
+    color: #999999;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Times New Roman", serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+p{
+    font-size: 14px;
+}
+
+/*setting up border on top and bottom to look like the template and the background and border color as well */
+nav{
+    background-color: #FFF;
+    border-top: 1px solid #969696;
+    border-bottom:  1px solid #969696;
+    padding: 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* taking the style out of the list*/
+nav ul li{
+    list-style: none;
+    padding: 10px 0;
+}
+
+/*take the decoration out of the text and making the font-weight bold*/
+nav ul li a{
+    color: #696969;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*set up each section with padding and margin on the right*/
+section {
+    background-color:  #fff;
+    border: 1px solid #aaaaaa;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+/*leaving the last section with no margin on the right*/
+section:last-child{
+    margin-right: 0;
+}
+
+/*setting up the image to 100% of the section*/
+section img {
+    max-width: 100%;
+}
+
+/*create new @media query to portrait tablets and large phones*/
+@media screen and (min-width: 600px) {
+        
+    /*max-width to 100% because this media query will go up to 767px only*/
+    #wrap {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    /*display now is inline instead of block and create new padding*/
+    nav ul li{
+        display: inline;
+        padding: 0 2%;
+    }
+
+    /*I set up the width to 27.5% so it can have space for margin and so it doesn't break as long as maximize the screen*/
+    section{
+        width: 27.5%;
+        padding: 2%;
+        margin-right: 2%;
+        float: left;
+    }
+    
+    /*leaving the last section with no margin on the right*/
+    section:last-child {
+        margin-right: 0;
+    }
+}
+
+
+    /*new media query to  landcape tablets from 768px*/
+@media screen and (min-width: 768px) {
+    
+    /*max-width to 100% because this media query will go up to 899px only*/
+    #wrap {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    /*display now is inline instead of block and create new padding*/
+    nav ul li{
+        display: inline;
+        padding: 0 2%;
+    }
+
+    /*I set up the width to 27.5% so it can have space for margin and so it doesn't break as long as maximize the screen*/
+    section{
+        width: 27.5%;
+        padding: 2%;
+        margin-right: 2%;
+        float: left;
+    }
+
+    /*leaving the last section with no margin on the right*/
+    section:last-child {
+        margin-right: 0;
+    }
+}
+
+    /*since the max-width is 900px, the last media query and #wrap size is set to 900px*/
+@media screen and (min-width: 900px) {
+    #wrap {
+        max-width: 900px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    section img {
+        max-width: 100%;
+    }
+
+    /*display now is inline instead of block and create new padding*/
+    nav ul li{
+        display: inline;
+        padding: 0 2%;
+    }
+
+    /*because in this case the viewport is bigger, the width set is now 27.75%*/
+    section{
+        width: 27.75%;
+        padding: 2%;
+        margin-right: 2%;
+        float: left;
+    }
+
+    /*leaving the last section with no margin on the right*/
+    section:last-child {
+        margin-right: 0;
+    }
+}
